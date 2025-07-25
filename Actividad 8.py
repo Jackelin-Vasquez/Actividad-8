@@ -7,7 +7,7 @@ while True:
     print("4.Ver todos lo productos:")
     print("5.Salir del programa")
 
-    ocpion= input("Ingrese una opcion:")
+    ocpion = input("Ingrese una opcion:")
 
     match opcion:
 
@@ -18,6 +18,9 @@ while True:
         case "2":
             print(productos)
             producto_modificado= input("Ingrese indice de producto a modificar:")
+            nuevo= input("INgrese nuevo producto:")
+            producto_modificado[productos] = nuevo
+            print(f"Producto modificado\n Nueva lista{productos}")
         case "3":
             print(productos)
             eliminar_producto= input("Ingrese producto a eliminar:").lower()
