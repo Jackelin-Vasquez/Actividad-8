@@ -5,3 +5,31 @@ while True:
     print("2.Modificar un producto existente:")
     print("3.Eliminar un producto")
     print("4.Ver todos lo productos:")
+    print("5.Salir del programa")
+
+    ocpion= input("Ingrese una opcion:")
+
+    match opcion:
+
+        case "1":
+            agregar_producto= input("Escriba producto a agrgar:")
+            productos.append(agregar_producto)
+            print("Producto agregado:")
+        case "2":
+            print(productos)
+            producto_modificado= input("Ingrese indice de producto a modificar:")
+        case "3":
+            print(productos)
+            eliminar_producto= input("Ingrese producto a eliminar:").lower()
+            if eliminar_producto in productos:
+                productos.remove((eliminar_producto))
+                print(f"{eliminar_producto} eliminado exitosamente")
+            else:
+                print("Producto  no encontrado")
+        case "4":
+            print(f"PRODUCTOS:\n {productos}")
+        case "5":
+            print("Saliendo del programa...")
+            break
+        case _:
+            print("Opción no disponible ")
