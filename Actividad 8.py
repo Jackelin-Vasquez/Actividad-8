@@ -25,7 +25,7 @@ while True:
             print(productos)
             eliminar_producto= input("Ingrese producto a eliminar:").lower()
             if eliminar_producto in productos:
-                productos.remove((eliminar_producto))
+                productos.remove(eliminar_producto)
                 print(f"{eliminar_producto} eliminado exitosamente")
             else:
                 print("Producto  no encontrado")
