@@ -7,7 +7,7 @@ while True:
     print("4.Ver todos lo productos:")
     print("5.Salir del programa")
 
-    ocpion = input("Ingrese una opcion:")
+    opcion = input("Ingrese una opcion:")
 
     match opcion:
 
@@ -30,7 +30,9 @@ while True:
             else:
                 print("Producto  no encontrado")
         case "4":
-            print(f"PRODUCTOS:\n {productos}")
+            print(f"PRODUCTOS:")
+            for i in productos:
+                print(i)
         case "5":
             print("Saliendo del programa...")
             break
