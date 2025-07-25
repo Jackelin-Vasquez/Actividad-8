@@ -17,9 +17,9 @@ while True:
             print("Producto agregado:")
         case "2":
             print(productos)
-            producto_modificado= input("Ingrese indice de producto a modificar:")
+            producto_modificado= int(input("Ingrese indice de producto a modificar:"))
             nuevo= input("INgrese nuevo producto:")
-            producto_modificado[productos] = nuevo
+            productos[producto_modificado] = nuevo
             print(f"Producto modificado\n Nueva lista{productos}")
         case "3":
             print(productos)
